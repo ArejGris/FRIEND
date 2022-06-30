@@ -1,0 +1,131 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+html, body{
+font-family: 'Roboto','sans-serif';
+}
+a{
+text-decoration: none;}
+.container{
+max-width:80%;
+margin:auto;
+}
+.bg-dark{
+background-color: #252A34;
+color:#ffff;
+
+}
+.text-primary{
+color: #ff2e63;
+
+}
+.text-center{
+text-align: center;
+}
+.l-heading{
+font-size: 3rem;
+text-transform: uppercase;
+}
+.py-1{
+padding: 1.5rem 0;
+}
+.btn-primary{
+padding: .70rem 1.3rem;
+font-size: 140%;
+}
+.btn{ background-color: #08D9D6; color: #ffff; padding: 0.1rem .2rem;  }
+.btn:hover{
+background-color: #ff2e63;
+}
+#navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+top: 0;
+z-index: 1;
+}
+#navbar .logo img{
+width: 80px;
+}
+#navbar ul {
+list-style: none;
+display: flex;}
+#navbar ul li a{
+color:#ffff;
+padding: 1rem;
+}
+#navbar ul li a:hover{
+background-color: #08D9D6;
+
+}
+#showcase{
+background: #252a34 url(../images/main.jpg) no repeat center center/cover;
+}
+image{
+    max-width: 20px;
+    max-height: 30px;
+    size: 9px;
+}
+.container{
+    background-color: antiquewhite;
+
+    justify-items: center;
+    margin-top: 4rem;
+}
+.card{
+    justify-items: center;
+    align-items: center;
+
+}
+.card-header{
+    text-align: center;
+    color: #ff2e63;
+    font-weight: 200%;
+    font-size: larger;
+   
+}
+.card-body{
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    box-shadow: #08D9D6;
+}
+
+#table{
+    font-weight: 100%;
+    /* border:1px solid #08D9D6; */
+    border-width: 2px;
+    box-shadow: #5c86da;
+    width: 100%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.footer {
+	border-top: 1px solid  #08D9D6;
+;
+	padding-top: 10px;
+    text-align: center;
+    justify-content: end;
+    margin-top: 3rem;
+}
+
+.footer div {
+	margin: 0 auto;
+	overflow: hidden;
+	width: 960px;
+}
+
+.footer div div {
+	float: left;
+	margin-left: 65px;
+	width: 175px;
+}
