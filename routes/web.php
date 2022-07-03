@@ -3,7 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\MemberController;
+use App\Http\Controllers\UPloadController;
 use App\Http\Controllers\CommentController;
+use App\Models\Photo;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,3 +39,10 @@ Route::get('/comments/edit/{id}',[CommentController::class,'edit'])->name('edit.
 Route::get('/comments/delete/{id}',[CommentController::class,'destroy'])->name('delete.comment');
 Route::get('/comments/deleteall',[CommentController::class,'deleteAll']);
 Route::get('/posts/delete/{id}',[PostController::class,'destroy'])->name('delete.post');
+Route::get('/upload',[UPloadController::class,'index'])->name('photo.view');
+Route::post('/store',[UPloadController::class,'upload'])->name('file.store');
+Route::get('/photo/{id}',[UPloadController::class,'show']);
+Route::get('/photos/delete', function () {
+    Photo::truncate();
+});
+Route::get('/show',[UPloadController::class,'showme']);
