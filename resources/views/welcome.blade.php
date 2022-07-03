@@ -17,7 +17,7 @@
     </div>
        <ul id="headul">
          <li><a href="posts">Home</a></li>
-         <li><a href="#about">About</a></li>
+         <li><a href="/show">About</a></li>
          <li><a href="#program">Program</a></li>
          <li><a href="#trainer">Trainer</a></li>
          <li><a href="#contact">Contact</a></li>
